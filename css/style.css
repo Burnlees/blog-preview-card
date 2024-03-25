@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+/* Custom CSS Properties */
+:root {
+  --clr-primary-yel: hsl(47, 88%, 63%);
+
+  --clr-neutral-whi: hsl(0, 0%, 100%);
+  --clr-neutral-gry: hsl(0, 0%, 50%);
+  --clr-neutral-blk: hsl(0, 0%, 7%);
+
+  --ff-base: "Figtree", sans-serif;
+
+  --fs-body: 16px;
+
+  --fw-regular: 500;
+  --fw-bold: 800;
+}
+/* CSS Rest */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* Page Styling */
+body {
+  background-color: var(--clr-primary-yel);
+  font-family: var(--ff-base);
+  font-size: var(--fs-body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--clr-neutral-whi);
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  padding: 1.2rem;
+  border: 1px solid var(--clr-neutral-blk);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0rem 0 var(--clr-neutral-blk);
+}
+
+.card img {
+    border-radius: 0.7rem;
+}
+
+article {
+    padding-right: 1rem;
+}
+
+.tags {
+    background-color: var(--clr-primary-yel);
+    color: var(--clr-neutral-blk);
+    font-weight: var(--fw-bold);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+    width: 75px;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+.published-date {
+    color: var(--clr-neutral-blk);
+    font-weight: var(--fw-regular);
+    font-size: 0.8rem;
+}
+
+h2.blog-title {
+    font-weight: var(--fw-bold);
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+h2.blog-title a, a:visited {
+    color: var(--clr-neutral-blk);
+    text-decoration: none;
+}
+
+h2.blog-title a:hover, a:active {
+    color: var(--clr-primary-yel);
+}
+
+.summary {
+    color: var(--clr-neutral-gry);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: var(--fw-bold);
+    margin: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+    height: 20px;
+}
+
+.attribution {
+    margin: 1rem;
+}
